@@ -1,0 +1,31 @@
+<div class="col-md-6 offset-md-3"> 
+    <h3>Employee Details</h3>
+    <form (ngSubmit)= "onSubmit()">
+        <div class="form-group">
+            <label>Name</label>
+            <span type="text" class="form-control" id="name" 
+            [(ngModel)] = "employees.name" name="name">{{employees.name}}</span>
+           
+        </div>
+    
+        <div class="form-group">
+            <label>Email :</label>
+            <span type="text" class="form-control" id="email" 
+            [(ngModel)] = "employees.email" name="email">{{employees.email}}</span>
+        </div>
+    
+        <div class="form-group">
+            <label>Job Title</label>
+            <span type="text" class="form-control" id="jobtitle" 
+            [(ngModel)] = "employees.jobTitle" name="jobtitle">{{employees.jobTitle}}</span>
+        </div>
+    
+        <div class="form-group">
+            <label>Phone No.</label>
+            <span type="text" class="form-control" id="phone_no" 
+            [(ngModel)] = "employees.phone" name="phone">{{employees.phone}}</span>
+        </div>
+        <button class="btn btn-success" type="submit">Home</button>
+    
+    </form>
+    </div>
